@@ -4,6 +4,11 @@ function playGame(event) {
     const userGuess = parseInt(document.getElementById('guess').value, 10);
     const randomNumber = Math.floor(Math.random() * 10) + 1;
     const result = document.getElementById('game-result');
+
+    if(isNaN(userGuess) || userGuess < 1 || userGuess > 10) {
+        result.textContent = "Please enter a valid number between 1 and 10."
+        return;
+    }
     if (userGuess === randomNumber) {
       result.textContent = `You guessed right! The number was ${randomNumber}. Here's your coupon: COUPON10`; 
     } else {
@@ -32,3 +37,6 @@ const toggleButton = document.getElementById('theme-toggle');
         body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
       }
     });
+
+// Event listener
+document.getElementById("game-form").addEventListener("submit", playGame);
