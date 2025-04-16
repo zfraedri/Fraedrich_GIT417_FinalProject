@@ -1,4 +1,15 @@
-
+// GUESSING GAME
+function playGame(event) {
+    event.preventDefault();
+    const userGuess = parseInt(document.getElementById('guess').value, 10);
+    const randomNumber = Math.floor(Math.random() * 10) + 1;
+    const result = document.getElementById('game-result');
+    if (userGuess === randomNumber) {
+      result.textContent = `You guessed right! The number was ${randomNumber}. Here's your coupon: COUPON10`; 
+    } else {
+      result.textContent = `Not quite! The number was ${randomNumber}. Try again!`;
+    }
+  }
 
 
 

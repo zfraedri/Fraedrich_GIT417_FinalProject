@@ -25,23 +25,105 @@
 
     <link rel="stylesheet" href="styles.css">
     <link rel="script" href="scripts.js">
-    <title>Arson Aesthetic</title>
+    <title>Arson Aesthetic - Services</title>
 </head>
 <body>
     <header>
-        <h1></h1>
-        <p></p>
+        <h1>Transform Your Brand with Purpose-Driven Design</h1>
+        <p>From custom websites to full branding ecosystems, we help businesses thrive in the digital world.</p>
+        <a href="#contact">Book a Free Consultation</a>
+        <button id="theme-toggle">switcher</button>
     </header>
     <nav>
         <ul>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
-            <li><a href=""></a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Contact</a></li>
         </ul>
     </nav>
     <main>
 
+        <section>
+            <h2>Your Partner in Building Bold Brands</h2>
+            <p>At Arson Aesthetic, we believe in igniting your business with captivating designs that resonate with your audience. With our expert mix of UI/UX, branding, and digital marketing, we craft identities that leave a lasting impression.</p>
+        </section>
+
+        <section>
+            <h2>Our Full Branding Ecosystem</h2>
+            <dl>
+                    <dt>Custom Websites</dt>
+                    <dd>SEO-compliant, built for conversions and designed with your brand in mind.</dd>
+                
+                    <dt>Branding & Visual Design</dt>
+                    <dd>Logo design, typography, color palette, and full brand identity.</dd>
+                
+                    <dt>Marketing Strategy & SEO</dt>
+                    <dd>Digital marketing strategies, SEO optimization, and content creation to get your brand noticed.</dd>
+            </dl>
+        </section>
+
+        <section>
+            <h2>Choose the Right Package for Your Business</h2>
+            <p>We believe in making the sales process clear and simple. No hidden fees, just straightforward pricing that aligns with your needs and goals.</p>
+            
+            <article>
+                <h3>Starter Package ($1200+)</h3>
+                <p>Custom Website (Mobile-First Design) + Basic Branding (Logo + Color Palette) + Essential SEO Setup.</p>
+            </article>
+            
+            <article>
+                <h3>Gold Package ($2500+)</h3>
+                <p>Everything in Starter + Professional Photography + Enhanced Branding.</p>
+            </article>
+
+            <article>
+                <h3>Platinum Performance Package ($4500+)</h3>
+                <p>Everything in Gold + Short-Form Video Content + Advanced SEO Strategy + Ongoing Marketing Consultation.</p>
+            </article>
+            
+            <small>*Depending on complexity, additional charges may occur.</small>
+        </section>
+
+        <section id="game">
+            <h2>Feeling Lucky?</h2>
+            <p>Guess a number between 1 and 10. If you're right, you win a coupon!</p>
+            <form onsubmit="playGame(event)">
+            <label for="guess">Your guess:</label>
+            <input type="number" id="guess" name="guess" min="1" max="10" required>
+            <input type="submit" value="Try Your Luck!">
+            </form>
+            <p id="game-result"></p>
+        </section>
+
+        <section id="contact">
+            <h2>Ready to Take Your Brand to the Next Level?</h2>
+            <form action="https://wp.zybooks.com/form-viewer.php" method="POST">
+            <label for="fullName">Full Name: <span class="required">*</span></label>
+            <input type="text" id="fullName" name="name" required>
+
+            <label for="phoneNum">Phone Number:</label>
+            <input type="tel" id="phoneNum" name="phoneNum">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="comments">Comments: <span class="required">*</span></label>
+            <textarea id="comments" name="comments" required></textarea>
+
+            <fieldset>
+                <legend>Preferred Method of Contact: <span class="required">*</span></legend>
+                
+                <input type="radio" id="prefPhoneNum" name="contactMethod" value="phone">
+                <label for="prefPhoneNum">Phone</label>
+
+                <input type="radio" id="prefEmail" name="contactMethod" value="email">
+                <label for="prefPhoneNum">Email</label>
+            </fieldset>
+
+            <input type="submit" value="Book Your Free Consultation Today!">
+            </form>
+        </section>
     </main>
     <footer>
 
