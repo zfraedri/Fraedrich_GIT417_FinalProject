@@ -104,7 +104,7 @@ h3{
     font-size:1.5rem;
 }
 
-button {
+#theme-toggle {
     position: absolute;
     width: 64px;
     height: 32px;
@@ -114,8 +114,22 @@ button {
     border: 3px solid #111;
 }
 
+header a{
+    text-decoration: none;
+    color: var(--black);
+    background-color: var(--orange);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-family: var(--accent);
+    position: absolute;
+    right: 32px;
+    box-shadow: var(--drop-shadow);
+}
+
+
 nav{
     grid-column: 1/4;
+    margin: 16px 0;
 }
 nav ul {
     list-style-type: none;
@@ -136,10 +150,7 @@ nav li a {
     padding: 14px 16px;
     text-decoration: none;
 }
-/* Change the link color to #111 (black) on hover */
-li a:hover {
-    background-color: #111;
-}
+
 
 main{
     grid-column: 1/-1;
@@ -162,20 +173,23 @@ main{
     grid-template-columns: 1fr 1fr 1.5fr;
 }
 #packages p{
-    grid-column: 1/4;
+    grid-column: 1/-1;
 }
 #packages small{
-    grid-column: 1/4;
+    grid-column: 1/-1;
     text-align: center;
 }
 #starterPkg{
-    grid-column: 1/2;
+    grid-column: 1/-1;
+    background-color: var(--starter-green);
 }
-#goldPkg{
-    grid-column: 2/3;
+#corePkg{
+    grid-column: 1/-1;
+    background-color: var(--core-blue);
 }
 #platPkg{
-    grid-column: 3/4;
+    grid-column: 1/-1;
+    background-color: var(--performance-red);
 }
 
 #game{
@@ -195,6 +209,17 @@ main{
 }
 #contact form label, #contact form input, #contact form fieldset, #contact form textarea{
     grid-column: 2/3;
+}
+
+#submit {
+    color: var(--black);
+    background-color: var(--orange);
+    padding: 8px 16px;
+    margin: 16px 0;
+    border-style: none;
+    border-radius: 8px;
+    font-family: var(--accent);
+    box-shadow: var(--drop-shadow);
 }
 
 
